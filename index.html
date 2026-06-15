@@ -1,50 +1,269 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>プライバシーポリシー - 洗車プルーフ</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
-        h1 { border-bottom: 2px solid #007aff; padding-bottom: 10px; color: #111; }
-        h2 { color: #007aff; margin-top: 30px; }
-        p, li { font-size: 15px; }
-        .footer { margin-top: 50px; font-size: 12px; color: #666; border-top: 1px solid #ddd; padding-top: 10px; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー｜洗車プルーフ</title>
+  <style>
+    :root {
+      --bg: #f4f6f9;
+      --surface: #ffffff;
+      --primary: #007aff;
+      --text: #1a1a2e;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --accent: #007aff18;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 24px;
+      text-align: center;
+    }
+
+    .app-name {
+      font-size: 13px;
+      color: var(--primary);
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-bottom: 4px;
+    }
+
+    header h1 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+
+    .intro {
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 28px;
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    section {
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+
+    section h2 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    section h2 .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      background: var(--accent);
+      color: var(--primary);
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    p {
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: #374151;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+      font-size: 13px;
+    }
+
+    .data-table th {
+      background: var(--bg);
+      padding: 8px 12px;
+      text-align: left;
+      font-weight: 600;
+      color: var(--muted);
+      font-size: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .data-table td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+      color: #374151;
+      vertical-align: top;
+    }
+
+    .data-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .note {
+      background: var(--accent);
+      border-left: 3px solid var(--primary);
+      border-radius: 0 8px 8px 0;
+      padding: 12px 16px;
+      font-size: 13px;
+      color: #1d4ed8;
+      margin-top: 12px;
+    }
+
+    .contact-box {
+      background: var(--bg);
+      border-radius: 8px;
+      padding: 14px 16px;
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    .contact-box a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px 20px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+  </style>
 </head>
 <body>
 
-    <h1>プライバシーポリシー</h1>
-    <p>本プライバシーポリシーは、開発者「tomozou0186」（以下、「当方」といいます）が提供するスマートフォンアプリケーション「洗車プルーフ」（以下、「本アプリ」といいます）における、ユーザー情報の取り扱いを定めるものです。</p>
+<header>
+  <div class="app-name">洗車プルーフ</div>
+  <h1>プライバシーポリシー</h1>
+</header>
 
-<h2>1. 収集するユーザー情報と利用目的</h2>
-    <p>本アプリでは、提供する機能ごとに以下のユーザー情報を取得・利用します。</p>
-    <ul>
-        <li><strong>アカウント認証情報（ニックネーム、ユーザーID、および外部連携サービスから提供される識別子）：</strong> 
-            アプリ内でのユーザー識別、不正利用の防止、および投稿データ（洗車記録）をユーザーのアカウントに正しく紐付けるために利用します。
-            当方では、外部連携サービス（Googleアカウント等）のパスワードを収集・保持することはありません。
-        </li>
-        <li><strong>カメラおよび写真ライブラリへのアクセス：</strong> 
-            洗車記録の「Before/After」画像を撮影・選択し、アプリ内で比較・保存、およびクラウドストレージ（Supabase Storage）へアップロードするために利用します。
-        </li>
-    </ul>
+<main>
 
-    <h2>2. データの管理と第三者提供</h2>
-    <p>ユーザーから取得した画像データや洗車記録データは、安全性の高いクラウドサービス（Supabase）に保存され、適切に管理されます。当方がユーザーの同意なく、これらの個人データを第三者に開示・提供することはありません。</p>
+  <div class="intro">
+    本プライバシーポリシーは、開発者「tomozou0186」（以下「当方」）が提供するスマートフォンアプリケーション「洗車プルーフ」（以下「本アプリ」）における、ユーザー情報の取り扱いを定めるものです。本アプリを利用することで、本ポリシーに同意したものとみなします。
+  </div>
 
-    <h2>3. 外部シェア機能について</h2>
-    <p>本アプリには、ユーザー自身の操作によって洗車記録（Before/After合成画像およびテキスト）を外部のソーシャルメディア（X等）へシェアする機能が含まれています。シェアされた情報については、移行先の各サービスの利用規約およびプライバシーポリシーが適用されます。</p>
+  <section>
+    <h2><span class="num">1</span>収集するユーザー情報と利用目的</h2>
+    <p>本アプリでは、以下のユーザー情報を取得・利用します。</p>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>情報の種類</th>
+          <th>利用目的</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ニックネーム</td>
+          <td>アプリ内での表示名として使用します。投稿した洗車記録に表示されます。</td>
+        </tr>
+        <tr>
+          <td>ユーザーID（匿名）</td>
+          <td>ユーザーの識別、投稿データとアカウントの紐付け、不正利用の防止に使用します。メールアドレス・パスワード・外部サービスアカウントは一切収集しません。</td>
+        </tr>
+        <tr>
+          <td>洗車記録（Before/After画像・作業カテゴリ・メニュー・ブランド・商品名・満足度・コメント・投稿日時）</td>
+          <td>アプリの主機能として記録・表示・共有するために使用します。</td>
+        </tr>
+        <tr>
+          <td>カメラ・写真ライブラリへのアクセス</td>
+          <td>Before/After画像の撮影・選択・端末への保存に使用します。当方がカメラや写真ライブラリにアクセスするのは、ユーザーが明示的に操作した場合のみです。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
-    <h2>4. 免責事項</h2>
-    <p>本アプリの利用によって生じた何らかのトラブル、損失、損害について、当方は一切の責任を負いません。自己の責任においてご利用ください。</p>
-
-    <h2>5. お問い合わせ</h2>
-    <p>本ポリシーに関するお問い合わせは、Google Playストアのデベロッパー連絡先、またはアプリ内の指定窓口までお願いいたします。</p>
-
-    <div class="footer">
-        <p>制定日：2026年6月8日</p>
-        <p>© 2026 tomozou0186</p>
+  <section>
+    <h2><span class="num">2</span>データの保存・管理・第三者提供</h2>
+    <p>取得した情報は、米国に拠点を置くSupabase Inc.が運営するクラウドサービス（Supabase）に保存されます。同サービスはデータを暗号化して転送・保存しています。</p>
+    <p>当方は、ユーザーの同意なく個人データを第三者に開示・販売・提供することはありません。ただし、法令に基づき開示が必要と判断された場合はこの限りではありません。</p>
+    <div class="note">
+      ユーザーの投稿（洗車記録・画像）は、「みんなの投稿」として本アプリを利用するすべてのユーザーに公開されます。公開を望まない情報は投稿しないようご注意ください。
     </div>
+  </section>
+
+  <section>
+    <h2><span class="num">3</span>外部シェア機能について</h2>
+    <p>本アプリには、ユーザー自身の操作によって洗車記録（Before/After合成画像およびテキスト）を外部のソーシャルメディア（X等）へシェアする機能が含まれています。</p>
+    <p>シェアされた情報については、移行先の各サービスの利用規約およびプライバシーポリシーが適用されます。当方はシェア先での情報の取り扱いについて責任を負いません。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">4</span>アカウントおよびデータの削除</h2>
+    <p>ユーザーはいつでもアカウントを削除できます。アカウントを削除すると、以下のデータがすべて削除され、復元できません。</p>
+    <ul style="margin: 8px 0 12px 20px; font-size: 14px; color: #374151; line-height: 2;">
+      <li>投稿したすべての洗車記録</li>
+      <li>アップロードしたBefore/After画像</li>
+      <li>ニックネームを含むアカウント情報</li>
+    </ul>
+    <p>アカウント削除はアプリ内の「設定」画面から実行できます。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">5</span>ご利用対象年齢</h2>
+    <p>本アプリは13歳以上の方を対象としています。13歳未満の方のご利用はお断りしています。保護者の方は、お子様が本アプリを利用していないかご確認ください。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">6</span>免責事項</h2>
+    <p>本アプリの利用によって生じたトラブル・損失・損害について、当方は一切の責任を負いません。自己の責任においてご利用ください。</p>
+    <p>本ポリシーは必要に応じて改定することがあります。重要な変更がある場合はアプリ内またはストアのリリースノートにてお知らせします。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">7</span>お問い合わせ</h2>
+    <p>本ポリシーに関するお問い合わせは、以下の方法でご連絡ください。</p>
+    <div class="contact-box">
+      Google Play ストア デベロッパーページの連絡先、またはApp Store デベロッパーページの連絡先よりお問い合わせください。
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>制定日：2026年6月8日</p>
+  <p style="margin-top: 4px;">© 2026 tomozou0186</p>
+</footer>
 
 </body>
 </html>
